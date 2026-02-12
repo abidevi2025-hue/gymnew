@@ -1,0 +1,582 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PowerFit Gym</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Arial;
+}
+body{
+    background:#0b0b0b;
+    color:#fff;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(90deg,#000,#111,#000);
+    padding:25px;
+    text-align:center;
+    border-bottom:4px solid #ff1a1a;
+}
+header h1{ color:#ff1a1a; letter-spacing:3px; }
+
+/* NAVBAR */
+nav{
+    background:#151515;
+    padding:14px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+nav a{
+    color:#fff;
+    margin:0 18px;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover{ color:#ff1a1a; }
+
+/* HERO */
+.hero{
+    background:linear-gradient(rgba(0,0,0,.85),rgba(0,0,0,.85)),
+    url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48') center/cover;
+    padding:100px 20px;
+    text-align:center;
+}
+.hero h2{ color:#ff1a1a; font-size:44px; }
+.hero p{ margin:15px 0; color:#ddd; }
+.hero button{
+    background:#ff1a1a;
+    color:White;
+    border:none;
+    padding:15px 35px;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+/* SECTIONS */
+.section{
+    padding:60px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+.section h2{
+    text-align:center;
+    color:#ff1a1a;
+    margin-bottom:35px;
+}
+
+/* CARDS */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+.card{
+    background:#141414;
+    padding:25px;
+    border-radius:12px;
+    border:1px solid #ff1a1a;
+    transition:.3s;
+}
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 15px rgba(255,26,26,.4);
+}
+
+/* CLICK ITEMS */
+.item{
+    background:#000;
+    padding:12px;
+    margin:8px 0;
+    border-radius:8px;
+    cursor:pointer;
+    border-left:4px solid #ff1a1a;
+}
+.item:hover{
+    background:#ff1a1a;
+    color:#000;
+}
+
+/* TIMING */
+.time{
+    padding:15px;
+    border:2px solid #ff1a1a;
+    border-radius:25px;
+    cursor:pointer;
+    margin:5px;
+    display:inline-block;
+}
+.time:hover{
+    background:#ff1a1a;
+    color:#000;
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    padding:22px;
+    text-align:center;
+    border-top:3px solid #ff1a1a;
+    color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>POWERFIT GYM</h1>
+    <p>Men & Women Fitness Center</p>
+</header>
+
+<nav>
+    <a href="#equipment">Equipment</a>
+    <a href="#diet">Diet</a>
+    <a href="#timing">Timing</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+    <h2>BUILD YOUR PERFECT BODY</h2>
+    <p>Train Hard • Stay Strong • Be Fit</p>
+    <button onclick="alert('Welcome to PowerFit Gym 💪')">Join Now</button>
+</section>
+
+<!-- EQUIPMENT -->
+<section class="section" id="equipment">
+<h2>Gym Equipment</h2>
+<div class="cards">
+    <div class="card">
+        <h3>Strength</h3>
+        <div class="item">Power Rack</div>
+        <div class="item">Chest Press</div>
+        <div class="item">Leg Press</div>
+        <div class="item">Smith Machine</div>
+    </div>
+
+    <div class="card">
+        <h3>Cardio</h3>
+        <div class="item">Treadmill</div>
+        <div class="item">Cross Trainer</div>
+        <div class="item">Exercise Bike</div>
+        <div class="item">Rowing Machine</div>
+    </div>
+</div>
+</section>
+
+<!-- DIET -->
+<section class="section" id="diet">
+<h2>Diet & Nutrition</h2>
+<div class="cards">
+    <div class="card">
+        <h3>Weight Loss</h3>
+        <div class="item">Oats</div>
+        <div class="item">Green Tea</div>
+        <div class="item">Fruits</div>
+    </div>
+
+    <div class="card">
+        <h3>Muscle Gain</h3>
+        <div class="item">Protein Shake</div>
+        <div class="item">Chicken Breast</div>
+        <div class="item">Egg Whites</div>
+    </div>
+</div>
+</section>
+
+<!-- TIMING -->
+<section class="section" id="timing">
+<h2>Gym Timing</h2>
+<div style="text-align:center">
+    <span class="time">5:00 AM</span>
+    <span class="time">7:00 AM</span>
+    <span class="time">6:00 PM</span>
+    <span class="time">8:00 PM</span>
+    <span class="time">9:30 PM</span>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+<h2>Contact Us</h2>
+<div class="cards">
+    <div class="card">
+        <h3>📍 PowerFit Gym</h3>
+        <p>Coimbatore</p>
+        <p>Email: powerfitgym</p>
+        <p>Phone: +91 98765 43210</p>
+    </div>
+</div>
+</section>
+
+<footer>
+    <p>© 2026 PowerFit Gym | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PowerFit Gym</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Arial;
+}
+body{
+    background:#0b0b0b;
+    color:#fff;
+}
+header{
+    background:#000;
+    padding:25px;
+    text-align:center;
+    border-bottom:4px solid #ff1a1a;
+}
+header h1{ color:#ff1a1a; letter-spacing:3px; }
+
+nav{
+    background:#151515;
+    padding:14px;
+    text-align:center;
+}
+nav a{
+    color:#fff;
+    margin:0 18px;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover{ color:#ff1a1a; }
+
+.section{
+    padding:60px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+.section h2{
+    text-align:center;
+    color:#ff1a1a;
+    margin-bottom:35px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#141414;
+    padding:25px;
+    border-radius:12px;
+    border:1px solid #ff1a1a;
+    transition:.3s;
+}
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 15px rgba(255,26,26,.4);
+}
+
+.price{
+    font-size:26px;
+    color:#00ff99;
+    margin:10px 0;
+}
+
+.btn{
+    display:block;
+    width:100%;
+    margin-top:15px;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    background:#ff1a1a;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+}
+.btn:hover{ opacity:0.9; }
+
+/* PAYMENT */
+.payment-box{
+    background:#000;
+    padding:20px;
+    border-radius:10px;
+    border:1px solid #ff1a1a;
+}
+.pay-method{
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ff1a1a;
+    border-radius:8px;
+    cursor:pointer;
+}
+.pay-method:hover{
+    background:#ff1a1a;
+    color:#000;
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    padding:20px;
+    text-align:center;
+    border-top:3px solid #ff1a1a;
+    color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>POWERFIT GYM</h1>
+    <p>Strong Body • Strong Mind</p>
+</header>
+
+<nav>
+    <a href="#membership">Membership</a>
+    <a href="#offers">Offers</a>
+    <a href="#payment">Payment</a>
+</nav>
+
+<!-- MEMBERSHIP PLANS -->
+<section class="section" id="membership">
+<h2>Membership Plans</h2>
+<div class="cards">
+
+    <div class="card">
+        <h3>Monthly Plan</h3>
+        <p class="price">₹1000</p>
+        <p>✔ Gym Access</p>
+        <p>✔ Cardio & Strength</p>
+        <button class="btn" onclick="selectPlan('Monthly - ₹1000')">Select Plan</button>
+    </div>
+
+    <div class="card">
+        <h3>Quarterly Plan</h3>
+        <p class="price">₹2700</p>
+        <p>✔ Save ₹300</p>
+        <p>✔ Trainer Support</p>
+        <button class="btn" onclick="selectPlan('Quarterly - ₹2700')">Select Plan</button>
+    </div>
+
+    <div class="card">
+        <h3>Yearly Plan</h3>
+        <p class="price">₹10000</p>
+        <p>✔ Best Value</p>
+        <p>✔ Free Diet Guide</p>
+        <button class="btn" onclick="selectPlan('Yearly - ₹10000')">Select Plan</button>
+    </div>
+
+</div>
+</section>
+
+<!-- OFFERS -->
+<section class="section" id="offers">
+<h2>Special Offers</h2>
+<div class="cards">
+
+    <div class="card">
+        <h3>🔥 3 Days Free Trial</h3>
+        <p>Try gym before joining</p>
+    </div>
+
+    <div class="card">
+        <h3>👯 Couple / Friend Offer</h3>
+        <p>Get extra discount</p>
+    </div>
+
+    <div class="card">
+        <h3>🎉 New Year Offer</h3>
+        <p>Flat 20% OFF</p>
+    </div>
+
+</div>
+</section>
+
+<!-- PAYMENT -->
+<section class="section" id="payment">
+<h2>Online Payment</h2>
+
+<div class="payment-box">
+    <h3 id="selectedPlan">Selected Plan: None</h3>
+
+    <div class="pay-method" onclick="pay('UPI')">📱 Pay via UPI</div>
+    <div class="pay-method" onclick="pay('Debit / Credit Card')">💳 Debit / Credit Card</div>
+    <div class="pay-method" onclick="pay('QR Code')">📷 Scan QR Code</div>
+</div>
+
+</section>
+
+<footer>
+    <p>© 2026 PowerFit Gym | Coimbatore</p>
+</footer>
+
+<script>
+let plan = "";
+
+function selectPlan(p){
+    plan = p;
+    document.getElementById("selectedPlan").innerText =
+        "Selected Plan: " + plan;
+    alert("Plan Selected: " + plan);
+}
+
+function pay(method){
+    if(plan === ""){
+        alert("Please select a membership plan first!");
+    } else {
+        alert("Payment Successful!\n\nPlan: " + plan + "\nMethod: " + method);
+    }
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+/* TRAINERS */
+.trainer-card{
+    background:#141414;
+    border:1px solid #ff1a1a;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+    transition:.3s;
+}
+.trainer-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 0 15px rgba(255,26,26,.4);
+}
+
+.trainer-card img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #ff1a1a;
+    margin-bottom:15px;
+}
+
+.trainer-card h3{
+    color:#ff1a1a;
+    margin-bottom:5px;
+}
+.trainer-card p{
+    color:#ccc;
+    font-size:14px;
+}
+.trainer-card .spec{
+    margin-top:10px;
+    color:#00ff99;
+    font-weight:bold;
+} <!-- TRAINERS -->
+<section class="section" id="trainers">
+  <h2>Our Special Trainers</h2>
+  <div class="cards">
+    
+    <!-- Male Trainer -->
+    <div class="trainer-card">
+      <img src="https://via.placeholder.com/140" alt="Sridhar">
+      <h3>Sridhar</h3>
+      <p>Specialist: Strength & Conditioning</p>
+      <p class="spec">Male Trainer</p>
+    </div>
+
+    <div class="trainer-card">
+      <img src="https://via.placeholder.com/140" alt="Abisheik">
+      <h3>Abisheik</h3>
+      <p>Specialist: Muscle Gain & Functional Training</p>
+      <p class="spec">Male Trainer</p>
+    </div>
+
+    <!-- Female Trainer -->
+    <div class="trainer-card">
+      <img src="https://via.placeholder.com/140" alt="Susmitha">
+      <h3>Susmitha</h3>
+      <p>Specialist: Weight Loss & Cardio</p>
+      <p class="spec">Female Trainer</p>
+    </div>
+
+    <div class="trainer-card">
+      <img src="https://via.placeholder.com/140" alt="Suruthi">
+      <h3>Suruthi</h3>
+      <p>Specialist: Yoga & Flexibility</p>
+      <p class="spec">Female Trainer</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
